@@ -25,8 +25,32 @@
 
 <div id="content">
     <?php
-        $myVariable = 482;
-        var_dump($myVariable);
+        $id = 1;
+        $name = 'iPhone';
+        $desc = 'This description for iPhone';
+        $img = '/images/goods/iphone.jpg';
+        $price = '$2000';
+
+        echo $id . '<br>';
+        echo $name . '<br>';
+        echo $desc . '<br>';
+        echo $img . '<br>';
+        echo $price . '<br>';
+
+        $product = [1, 'iPhone', 'This description for iPhone', '/images/goods/iphone.jpg', '$2000'];
+
+        $product = [
+            'id' => 1,
+            'name' => 'iPhone',
+            'desc' => 'This description for iPhone',
+            'img' => '/images/goods/iphone.jpg',
+            'price' => '$2000'
+        ];
+        
+        echo '<br>' . $product['name'] . '<br>';
+        echo $product['desc'] . '<br>';
+        $product['count'] = 222;
+        var_dump($product);
     ?>
     <!-- <div id="promo">
         <h1 id="promoText">
