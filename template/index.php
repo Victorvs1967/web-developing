@@ -25,32 +25,37 @@
 
 <div id="content">
     <?php
-        $id = 1;
-        $name = 'iPhone';
-        $desc = 'This description for iPhone';
-        $img = '/images/goods/iphone.jpg';
-        $price = '$2000';
 
-        echo $id . '<br>';
-        echo $name . '<br>';
-        echo $desc . '<br>';
-        echo $img . '<br>';
-        echo $price . '<br>';
-
-        $product = [1, 'iPhone', 'This description for iPhone', '/images/goods/iphone.jpg', '$2000'];
-
-        $product = [
-            'id' => 1,
-            'name' => 'iPhone',
-            'desc' => 'This description for iPhone',
-            'img' => '/images/goods/iphone.jpg',
-            'price' => '$2000'
+        $goods = [
+            [
+                'id' => 1,
+                'name' => 'iPhone',
+                'desc' => 'This description for iPhone',
+                'img' => '/images/goods/iphone.jpg',
+                'price' => '$2000'
+            ],
+            [
+                'id' => 2,
+                'name' => 'HTC',
+                'desc' => 'This description for HTC',
+                'img' => '/images/goods/htc.jpg',
+                'price' => '$1000'
+            ],
+            [
+                'id' => 3,
+                'name' => 'Samsung',
+                'desc' => 'This description for Samsung',
+                'img' => '/images/goods/samsung.jpg',
+                'price' => '$1200'
+            ],
         ];
-        
-        echo '<br>' . $product['name'] . '<br>';
-        echo $product['desc'] . '<br>';
-        $product['count'] = 222;
-        var_dump($product);
+
+        echo '<pre>';
+        var_dump($goods);
+
+        echo $goods[0]['name'] . '<br>';
+        echo $goods[2]['desc'] . '<br>';
+        echo $goods[2]['price'] . '<br>';
     ?>
     <!-- <div id="promo">
         <h1 id="promoText">
