@@ -219,6 +219,7 @@ footer {
 .shopUnit {
     float: left;
     width: 28%;
+    height: 495px;
     padding: 5px;
     border: 1px solid rgba(225, 225, 225, 0.7);
     margin-right: 6.365%;
@@ -269,6 +270,10 @@ footer {
 .shopUnitMore:hover {
     color: #fff;
     background-color: #777777;
+}
+
+.card-body {
+    height: 83%;
 }
 
 /* ------------------ КОНЕЦ стилей для главной старницы магазина -------------------------- */
