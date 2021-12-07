@@ -25,37 +25,47 @@
 
 <div id="content">
     <?php
-
         $goods = [
             [
                 'id' => 1,
                 'name' => 'iPhone',
                 'desc' => 'This description for iPhone',
-                'img' => '/images/goods/iphone.jpg',
+                'img' => 'images/goods/iphone.jpg',
                 'price' => '$2000'
             ],
             [
                 'id' => 2,
                 'name' => 'HTC',
                 'desc' => 'This description for HTC',
-                'img' => '/images/goods/htc.jpg',
+                'img' => 'images/goods/htc.jpg',
                 'price' => '$1000'
             ],
             [
                 'id' => 3,
                 'name' => 'Samsung',
                 'desc' => 'This description for Samsung',
-                'img' => '/images/goods/samsung.jpg',
+                'img' => 'images/goods/samsung.jpg',
                 'price' => '$1200'
             ],
         ];
 
+        $goods[] = [
+            'id' => 4,
+            'name' => 'Explay',
+            'desc' => 'This description for Explay',
+            'img' => 'images/goods/explay.jpg',
+            'price' => '$500',
+            'discount' => 20,
+            'count' => 34
+        ];
+        $goods[2]['discount'] = 20;
+
         echo '<pre>';
         var_dump($goods);
 
-        echo $goods[0]['name'] . '<br>';
-        echo $goods[2]['desc'] . '<br>';
-        echo $goods[2]['price'] . '<br>';
+        // echo $goods[1]['name'] . '<br>';
+        // echo $goods[2]['desc'] . '<br>';
+        // echo $goods[2]['price'] . '<br>';
     ?>
     <!-- <div id="promo">
         <h1 id="promoText">
