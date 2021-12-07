@@ -60,8 +60,18 @@
         ];
         $goods[2]['discount'] = 20;
 
-        echo '<pre>';
-        var_dump($goods);
+
+        foreach ($goods as $key => $good) {
+            echo 'Array Key: ' . $key . '<br>';
+            echo $good['id'] . '<br>';
+            echo $good['name'] . '<br>';
+            echo $good['desc'] . '<br>';
+            echo $good['img'] . '<br>';
+            echo $good['price'] . '<br>';
+
+            echo '<hr>';
+        }
+
 
         // echo $goods[1]['name'] . '<br>';
         // echo $goods[2]['desc'] . '<br>';
