@@ -60,18 +60,15 @@
         ];
         $goods[2]['discount'] = 20;
 
+        $page = $_GET['page'];
 
-        foreach ($goods as $key => $good) {
-            echo 'Array Key: ' . $key . '<br>';
-            echo $good['id'] . '<br>';
-            echo $good['name'] . '<br>';
-            echo $good['desc'] . '<br>';
-            echo $good['img'] . '<br>';
-            echo $good['price'] . '<br>';
-
-            echo '<hr>';
+        if (!isset($page)) {
+            echo 'It is Main Page' . '<br>';
+        } elseif ($page == 'shop') {
+            echo 'It is Shop Page' . '<br>';
+        } elseif ($page == 'product') {
+            echo 'It is Product Page' . '<br>';
         }
-
 
         // echo $goods[1]['name'] . '<br>';
         // echo $goods[2]['desc'] . '<br>';
